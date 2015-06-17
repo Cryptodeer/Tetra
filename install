@@ -1,5 +1,5 @@
 apt-get install -y make gcc g++ dpkg-dev libdb5.1++-dev libqt4-dev libqrencode-dev libminiupnpc-dev \
   libboost-test1.49-dev zlib1g debhelper devscripts bash-completion libboost-system-dev libssl-dev pkg-config \
   libboost-filesystem-dev libboost-program-options-dev libboost-thread-dev libboost-test-dev
-git clone https://github.com/Cryptodeer/Tetra
-cd Tetra/src && make
+git clone https://github.com/Cryptodeer/tetra
+cd tetra/src && make
