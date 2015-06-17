@@ -1,0 +1,3 @@
+Building Tetra
+
+cd src && make

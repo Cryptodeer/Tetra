@@ -1,0 +1,147 @@
+init.cpp
+	new srges class on load
+	delete srges memory on shutdown
+	create a new ecdsa privkey and store it in srges db on first run
+
+Tetraminer 
+	erase nonce loop
+	create block every 10 seconds on [gen = 1]
+
+CBlock
+	erase nbits
+	erase nonce
+	new unsigned char array pubkey
+	new unsigned char vector hashsig
+	cblock::checktime newblock must be 1 minutes located from prev
+	cblock::signblock sign a block with ecdsa key 
+	cblock::checksig check the block signature
+	implement serialize for cpubkey end vchsig
+
+CBlockIndexOperator
+	switched Work to nHeight
+
+CPubKey
+	new costructor for loading pubkey from uint256
+	new costructor for loading pubkey from address
+	new method CPubKey::ToUint256 convert the pubkey to uint256
+
+CBitcoinAddress
+	new method getpubkey (reference to the pbk ecdsa)
+
+CInv
+	new enum MSG_KEY
+
+CTransaction
+	strDescription
+
+NEW class PeerRate
+	- memvector
+	- pointers to memvector (rate, firstmeet, lastseen, lastupdatetime)
+	- GetSerializedSize
+	- Serialize
+	- Unserialize
+
+NEW class srges [Standard Rate Gain & Endorse System]
+	srges is a rating method of a peer into a decentralized network.
+	structure:
+	- Toplist vector of pair cpubkey, peerrate
+	- Mypeer cpubkey
+	- Leveldeb interface read / write into srges.dat
+	- Addpeer method
+	- Erase peer method (Clean)
+	- Sort toplist
+	- Standard rate Gain rating method
+	- Standard rate Gain Curve
+	- Endorse System broadcast method
+	- Endorse System broadcast check
+	- CheckSig method
+
+
+AppInit new step
+	added proto step for loading srges db file
+
+new class PeerRate
+	method getserialized size
+	method serialize
+	method unserialize
+	array int for data
+	3 int pointers to array data
+
+CtxOut
+	nValue is now type Cash
+	Erase Compressor for nValue
+	Erase Decompressor for nValue
+
+______________________________________________________________________________________________
+
+new class Cash
+    Cash();
+    Cash(const Money &x);
+    Cash(const Amount &x);
+    Cash(const CashStruct &x);
+    Cash(const Cash & x);
+
+    IMPLEMENT_SERIALIZE(
+        READWRITE(local);
+    )
+    
+    int size() const;
+    Amount Max() const;
+    Amount Min() const;
+    CashStruct getLocal() const;
+
+    bool operator=( const Cash & x);
+    bool operator+=( const Cash &x);
+    Cash operator+( const Cash & x);
+    bool operator-=( const Cash &x);
+    Cash operator-( const Cash & x);
+    bool operator+=( const Money & x);
+    Cash operator+( const Money & x);
+    bool operator-=( const Money & x);
+    Cash operator-( const Money & x);
+    Cash operator-();
+    bool operator==( const Cash & x) const;
+    bool operator!=( const Cash & x) const;
+    bool operator >(const Cash & y);
+	bool operator <(const Cash & y);
+	Cash operator /(const double & x);
+	bool operator *=(const int & x);
+	Cash operator *(const int & x);
+	std::string ToString();
+	Object ToJSON
+
+class Fees{
+public:
+	int64 fees;
+	Fees();
+	Fees( int64 value );
+	Fees operator + ( const Fees &x);
+	Fees operator + ( const int64 &x);
+	Cash operator + ( const Cash &x);
+	Fees operator - ( const Fees &x);
+	Fees operator - ( const int64 &x);
+	Cash operator - ( const Cash &x);
+	bool operator -= ( const Fees &x);
+	bool operator -= ( const int64 &x);
+	bool operator += ( const Fees &x);
+	bool operator += ( const int64 &x);
+	bool operator < ( const Fees &x);
+	bool operator < ( const int64 &x);
+	bool operator > ( const Fees &x);
+	bool operator > ( const int64 &x);
+	bool operator == ( const Fees &x);
+	bool operator == ( const int64 &x);
+	bool operator >= ( const Fees &x);
+	bool operator >= ( const int64 &x);
+	bool operator <= ( const Fees &x);
+	bool operator <= ( const int64 &x);
+};
+
+
+Migrazione da int64 a Cash & Fees sostituzione in tutto il codice delle variabili
+
+
+
+TODO
+IMPORTANT
+- Inserire nel cash l'integrazione delle fee all'interno della mappa dinamica per quelle currency che hanno una fee non statica.

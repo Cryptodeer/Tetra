@@ -1,0 +1,516 @@
+sublime: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.0.
+Building LevelDB ...
+make[1]: Entering directory `/root/walletdev/deernet/src/leveldb'
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -c db/builder.cc -o db/builder.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -c db/c.cc -o db/c.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -c db/dbformat.cc -o db/dbformat.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -c db/db_impl.cc -o db/db_impl.o
+db/db_impl.cc: In member function ‘virtual bool leveldb::DBImpl::GetProperty(const leveldb::Slice&, std::string*)’:
+db/db_impl.cc:1347:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -c db/db_iter.cc -o db/db_iter.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -c db/filename.cc -o db/filename.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -c db/log_reader.cc -o db/log_reader.o
+db/log_reader.cc: In member function ‘unsigned int leveldb::log::Reader::ReadPhysicalRecord(leveldb::Slice*)’:
+db/log_reader.cc:181:26: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+db/log_reader.cc:192:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -c db/log_writer.cc -o db/log_writer.o
+db/log_writer.cc: In member function ‘leveldb::Status leveldb::log::Writer::EmitPhysicalRecord(leveldb::log::RecordType, const char*, size_t)’:
+db/log_writer.cc:77:3: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -c db/memtable.cc -o db/memtable.o
+db/memtable.cc: In member function ‘void leveldb::MemTable::Add(leveldb::SequenceNumber, leveldb::ValueType, const leveldb::Slice&, const leveldb::Slice&)’:
+db/memtable.cc:104:3: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -c db/repair.cc -o db/repair.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -c db/table_cache.cc -o db/table_cache.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -c db/version_edit.cc -o db/version_edit.o
+db/version_edit.cc: In function ‘bool leveldb::GetLevel(leveldb::Slice*, int*)’:
+db/version_edit.cc:101:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -c db/version_set.cc -o db/version_set.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -c db/write_batch.cc -o db/write_batch.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -c table/block_builder.cc -o table/block_builder.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -c table/block.cc -o table/block.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -c table/filter_block.cc -o table/filter_block.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -c table/format.cc -o table/format.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -c table/iterator.cc -o table/iterator.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -c table/merger.cc -o table/merger.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -c table/table_builder.cc -o table/table_builder.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -c table/table.cc -o table/table.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -c table/two_level_iterator.cc -o table/two_level_iterator.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -c util/arena.cc -o util/arena.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -c util/bloom.cc -o util/bloom.o
+util/bloom.cc: In member function ‘virtual void leveldb::{anonymous}::BloomFilterPolicy::CreateFilter(const leveldb::Slice*, int, std::string*) const’:
+util/bloom.cc:50:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -c util/cache.cc -o util/cache.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -c util/coding.cc -o util/coding.o
+util/coding.cc: In function ‘char* leveldb::EncodeVarint64(char*, uint64_t)’:
+util/coding.cc:84:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -c util/comparator.cc -o util/comparator.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -c util/crc32c.cc -o util/crc32c.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -c util/env.cc -o util/env.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -c util/env_posix.cc -o util/env_posix.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -c util/env_win.cc -o util/env_win.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -c util/filter_policy.cc -o util/filter_policy.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -c util/hash.cc -o util/hash.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -c util/histogram.cc -o util/histogram.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -c util/logging.cc -o util/logging.o
+util/logging.cc: In function ‘bool leveldb::ConsumeDecimalNumber(leveldb::Slice*, uint64_t*)’:
+util/logging.cc:67:53: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -c util/options.cc -o util/options.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -c util/status.cc -o util/status.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -c port/port_posix.cc -o port/port_posix.o
+rm -f libleveldb.a
+ar -rs libleveldb.a db/builder.o db/c.o db/dbformat.o db/db_impl.o db/db_iter.o db/filename.o db/log_reader.o db/log_writer.o db/memtable.o db/repair.o db/table_cache.o db/version_edit.o db/version_set.o db/write_batch.o table/block_builder.o table/block.o table/filter_block.o table/format.o table/iterator.o table/merger.o table/table_builder.o table/table.o table/two_level_iterator.o util/arena.o util/bloom.o util/cache.o util/coding.o util/comparator.o util/crc32c.o util/env.o util/env_posix.o util/env_win.o util/filter_policy.o util/hash.o util/histogram.o util/logging.o util/options.o util/status.o port/port_posix.o
+ar: creating libleveldb.a
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -c helpers/memenv/memenv.cc -o helpers/memenv/memenv.o
+rm -f libmemenv.a
+ar -rs libmemenv.a helpers/memenv/memenv.o
+ar: creating libmemenv.a
+make[1]: Leaving directory `/root/walletdev/deernet/src/leveldb'
+g++ -c -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -MMD -MF obj/alert.d -o obj/alert.o alert.cpp
+In file included from alert.cpp:13:0:
+net.h: In member function ‘void CNode::PushInventory(const CInv&)’:
+net.h:355:99: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<CInv>::size_type {aka long unsigned int}’ [-Wformat]
+/bin/sh ../share/genbuild.sh obj/build.h
+g++ -c -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -MMD -MF obj/version.d -o obj/version.o version.cpp
+g++ -c -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -MMD -MF obj/checkpoints.d -o obj/checkpoints.o checkpoints.cpp
+In file included from main.h:10:0,
+                 from checkpoints.cpp:10:
+net.h: In member function ‘void CNode::PushInventory(const CInv&)’:
+net.h:355:99: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<CInv>::size_type {aka long unsigned int}’ [-Wformat]
+In file included from checkpoints.cpp:10:0:
+main.h: In member function ‘std::string CTransaction::ToString() const’:
+main.h:681:16: warning: format ‘%d’ expects argument of type ‘int’, but argument 8 has type ‘std::vector<unsigned char>::size_type {aka long unsigned int}’ [-Wformat]
+g++ -c -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -MMD -MF obj/netbase.d -o obj/netbase.o netbase.cpp
+g++ -c -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -MMD -MF obj/addrman.d -o obj/addrman.o addrman.cpp
+g++ -c -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -MMD -MF obj/cash.d -o obj/cash.o cash.cpp
+In file included from main.h:10:0,
+                 from cash.cpp:2:
+net.h: In member function ‘void CNode::PushInventory(const CInv&)’:
+net.h:355:99: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<CInv>::size_type {aka long unsigned int}’ [-Wformat]
+In file included from cash.cpp:2:0:
+main.h: In member function ‘std::string CTransaction::ToString() const’:
+main.h:681:16: warning: format ‘%d’ expects argument of type ‘int’, but argument 8 has type ‘std::vector<unsigned char>::size_type {aka long unsigned int}’ [-Wformat]
+cash.cpp: In static member function ‘static void Cash::TEST()’:
+cash.cpp:568:6: warning: ISO C++ says that these are ambiguous, even though the worst conversion for the first is better than the worst conversion for the second: [enabled by default]
+In file included from cash.cpp:1:0:
+cash.h:148:7: note: candidate 1: bool Fees::operator==(const Fees&) const
+cash.h:149:7: note: candidate 2: bool Fees::operator==(const int64&)
+cash.cpp:583:6: warning: ISO C++ says that these are ambiguous, even though the worst conversion for the first is better than the worst conversion for the second: [enabled by default]
+In file included from cash.cpp:1:0:
+cash.h:144:7: note: candidate 1: bool Fees::operator<(const Fees&) const
+cash.h:145:7: note: candidate 2: bool Fees::operator<(const int64&)
+g++ -c -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -MMD -MF obj/fees.d -o obj/fees.o fees.cpp
+fees.cpp: In member function ‘bool Fees::operator=(const int64&)’:
+fees.cpp:10:17: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+fees.cpp: In member function ‘bool Fees::operator-=(const Fees&)’:
+fees.cpp:106:33: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+fees.cpp: In member function ‘bool Fees::operator-=(const int64&)’:
+fees.cpp:109:27: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+fees.cpp: In member function ‘bool Fees::operator+=(const Fees&)’:
+fees.cpp:112:33: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+fees.cpp: In member function ‘bool Fees::operator+=(const int64&)’:
+fees.cpp:115:27: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+fees.cpp: In static member function ‘static void Fees::TEST()’:
+fees.cpp:206:3: warning: ISO C++ says that these are ambiguous, even though the worst conversion for the first is better than the worst conversion for the second: [enabled by default]
+fees.cpp:123:6: note: candidate 1: bool Fees::operator>(const Fees&) const
+fees.cpp:126:6: note: candidate 2: bool Fees::operator>(const int64&)
+fees.cpp:211:3: warning: ISO C++ says that these are ambiguous, even though the worst conversion for the first is better than the worst conversion for the second: [enabled by default]
+fees.cpp:129:6: note: candidate 1: bool Fees::operator==(const Fees&) const
+fees.cpp:132:6: note: candidate 2: bool Fees::operator==(const int64&)
+g++ -c -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -MMD -MF obj/crypter.d -o obj/crypter.o crypter.cpp
+g++ -c -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -MMD -MF obj/key.d -o obj/key.o key.cpp
+key.cpp: In member function ‘void CPubKey::copykey(unsigned char*&)’:
+key.cpp:401:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+key.cpp: In member function ‘bool CPubKey::SetHex(const char*, uint)’:
+key.cpp:422:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+key.cpp:437:21: warning: unused variable ‘tbh’ [-Wunused-variable]
+g++ -c -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -MMD -MF obj/db.d -o obj/db.o db.cpp
+In file included from main.h:10:0,
+                 from db.h:8,
+                 from db.cpp:6:
+net.h: In member function ‘void CNode::PushInventory(const CInv&)’:
+net.h:355:99: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<CInv>::size_type {aka long unsigned int}’ [-Wformat]
+In file included from db.h:8:0,
+                 from db.cpp:6:
+main.h: In member function ‘std::string CTransaction::ToString() const’:
+main.h:681:16: warning: format ‘%d’ expects argument of type ‘int’, but argument 8 has type ‘std::vector<unsigned char>::size_type {aka long unsigned int}’ [-Wformat]
+g++ -c -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -MMD -MF obj/init.d -o obj/init.o init.cpp
+In file included from main.h:10:0,
+                 from txdb.h:8,
+                 from init.cpp:6:
+net.h: In member function ‘void CNode::PushInventory(const CInv&)’:
+net.h:355:99: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<CInv>::size_type {aka long unsigned int}’ [-Wformat]
+In file included from txdb.h:8:0,
+                 from init.cpp:6:
+main.h: In member function ‘std::string CTransaction::ToString() const’:
+main.h:681:16: warning: format ‘%d’ expects argument of type ‘int’, but argument 8 has type ‘std::vector<unsigned char>::size_type {aka long unsigned int}’ [-Wformat]
+In file included from init.h:10:0,
+                 from init.cpp:10:
+txwpool.h: In constructor ‘DummyParams::DummyParams(const Array&)’:
+txwpool.h:41:68: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::map<std::basic_string<char>, Cash>::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h: In member function ‘json_spirit::Array DummyParams::ToArray()’:
+txwpool.h:66:98: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<json_spirit::Value_impl<json_spirit::Config_vector<std::basic_string<char> > >, std::allocator<json_spirit::Value_impl<json_spirit::Config_vector<std::basic_string<char> > > > >::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h: In member function ‘const Destination DummyParams::getTarget() const’:
+txwpool.h:78:79: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::map<std::basic_string<char>, Cash>::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h: In member function ‘bool DummyParams::Merge(const DummyParams&)’:
+txwpool.h:87:107: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::map<std::basic_string<char>, Cash>::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h:87:107: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘std::map<std::basic_string<char>, Cash>::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h: In member function ‘std::string CTxWPool::Push(const Array&)’:
+txwpool.h:150:57: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<DummyParams>::size_type {aka long unsigned int}’ [-Wformat]
+init.cpp: In function ‘bool AppInit2(boost::thread_group&)’:
+init.cpp:665:43: warning: ISO C++ says that these are ambiguous, even though the worst conversion for the first is better than the worst conversion for the second: [enabled by default]
+In file included from main.h:15:0,
+                 from txdb.h:8,
+                 from init.cpp:6:
+cash.h:147:7: note: candidate 1: bool Fees::operator>(const int64&)
+init.cpp:665:43: note: candidate 2: operator>(int64 {aka long long int}, double) <built-in>
+g++ -c -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -MMD -MF obj/keystore.d -o obj/keystore.o keystore.cpp
+g++ -c -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -MMD -MF obj/main.d -o obj/main.o main.cpp
+In file included from main.h:10:0,
+                 from db.h:8,
+                 from main.cpp:9:
+net.h: In member function ‘void CNode::PushInventory(const CInv&)’:
+net.h:355:99: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<CInv>::size_type {aka long unsigned int}’ [-Wformat]
+In file included from db.h:8:0,
+                 from main.cpp:9:
+main.h: In member function ‘std::string CTransaction::ToString() const’:
+main.h:681:16: warning: format ‘%d’ expects argument of type ‘int’, but argument 8 has type ‘std::vector<unsigned char>::size_type {aka long unsigned int}’ [-Wformat]
+In file included from init.h:10:0,
+                 from main.cpp:12:
+txwpool.h: In constructor ‘DummyParams::DummyParams(const Array&)’:
+txwpool.h:41:68: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::map<std::basic_string<char>, Cash>::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h: In member function ‘json_spirit::Array DummyParams::ToArray()’:
+txwpool.h:66:98: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<json_spirit::Value_impl<json_spirit::Config_vector<std::basic_string<char> > >, std::allocator<json_spirit::Value_impl<json_spirit::Config_vector<std::basic_string<char> > > > >::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h: In member function ‘const Destination DummyParams::getTarget() const’:
+txwpool.h:78:79: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::map<std::basic_string<char>, Cash>::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h: In member function ‘bool DummyParams::Merge(const DummyParams&)’:
+txwpool.h:87:107: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::map<std::basic_string<char>, Cash>::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h:87:107: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘std::map<std::basic_string<char>, Cash>::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h: In member function ‘std::string CTxWPool::Push(const Array&)’:
+txwpool.h:150:57: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<DummyParams>::size_type {aka long unsigned int}’ [-Wformat]
+main.cpp: In function ‘bool ConnectBestBlock(CValidationState&)’:
+main.cpp:1362:140: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
+main.cpp: In member function ‘bool CBlock::CheckTxs(CValidationState&, CBlock*)’:
+main.cpp:2367:56: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<CTransaction>::size_type {aka long unsigned int}’ [-Wformat]
+main.cpp:2368:69: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+main.cpp: In function ‘bool InitBlockIndex()’:
+main.cpp:2952:21: warning: variable ‘thash’ set but not used [-Wunused-but-set-variable]
+main.cpp: In function ‘bool ProcessMessage(CNode*, std::string, CDataStream&)’:
+main.cpp:3395:16: warning: unused variable ‘nNonce’ [-Wunused-variable]
+main.cpp:3576:60: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<CInv>::size_type {aka long unsigned int}’ [-Wformat]
+main.cpp:3600:45: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
+main.cpp: In function ‘bool SendMessages(CNode*, bool)’:
+main.cpp:4233:104: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<CInv>::size_type {aka long unsigned int}’ [-Wformat]
+main.cpp: In function ‘void TetraMiner(CWallet*)’:
+main.cpp:4859:22: warning: unused variable ‘nTransactionsUpdatedLast’ [-Wunused-variable]
+main.cpp: In member function ‘int64 CBlockIndex::GetBlockValue(const CBlockIndex*, int) const’:
+main.cpp:4965:70: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
+main.cpp:4971:55: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+main.cpp:4971:5: warning: ‘value’ may be used uninitialized in this function [-Wuninitialized]
+main.cpp: At global scope:
+main.cpp:1200:21: warning: ‘unsigned int GetNextWorkRequired(const CBlockIndex*, const CBlockHeader*)’ defined but not used [-Wunused-function]
+g++ -c -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -MMD -MF obj/net.d -o obj/net.o net.cpp
+In file included from main.h:10:0,
+                 from db.h:8,
+                 from net.cpp:6:
+net.h: In member function ‘void CNode::PushInventory(const CInv&)’:
+net.h:355:99: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<CInv>::size_type {aka long unsigned int}’ [-Wformat]
+In file included from db.h:8:0,
+                 from net.cpp:6:
+main.h: In member function ‘std::string CTransaction::ToString() const’:
+main.h:681:16: warning: format ‘%d’ expects argument of type ‘int’, but argument 8 has type ‘std::vector<unsigned char>::size_type {aka long unsigned int}’ [-Wformat]
+In file included from init.h:10:0,
+                 from net.cpp:8:
+txwpool.h: In constructor ‘DummyParams::DummyParams(const Array&)’:
+txwpool.h:41:68: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::map<std::basic_string<char>, Cash>::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h: In member function ‘json_spirit::Array DummyParams::ToArray()’:
+txwpool.h:66:98: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<json_spirit::Value_impl<json_spirit::Config_vector<std::basic_string<char> > >, std::allocator<json_spirit::Value_impl<json_spirit::Config_vector<std::basic_string<char> > > > >::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h: In member function ‘const Destination DummyParams::getTarget() const’:
+txwpool.h:78:79: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::map<std::basic_string<char>, Cash>::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h: In member function ‘bool DummyParams::Merge(const DummyParams&)’:
+txwpool.h:87:107: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::map<std::basic_string<char>, Cash>::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h:87:107: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘std::map<std::basic_string<char>, Cash>::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h: In member function ‘std::string CTxWPool::Push(const Array&)’:
+txwpool.h:150:57: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<DummyParams>::size_type {aka long unsigned int}’ [-Wformat]
+net.cpp: In function ‘void ThreadOpenConnections()’:
+net.cpp:1316:42: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+g++ -c -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -MMD -MF obj/protocol.d -o obj/protocol.o protocol.cpp
+In file included from main.h:10:0,
+                 from protocol.cpp:9:
+net.h: In member function ‘void CNode::PushInventory(const CInv&)’:
+net.h:355:99: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<CInv>::size_type {aka long unsigned int}’ [-Wformat]
+In file included from protocol.cpp:9:0:
+main.h: In member function ‘std::string CTransaction::ToString() const’:
+main.h:681:16: warning: format ‘%d’ expects argument of type ‘int’, but argument 8 has type ‘std::vector<unsigned char>::size_type {aka long unsigned int}’ [-Wformat]
+g++ -c -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -MMD -MF obj/tetrarpc.d -o obj/tetrarpc.o tetrarpc.cpp
+In file included from main.h:10:0,
+                 from wallet.h:13,
+                 from init.h:8,
+                 from tetrarpc.cpp:6:
+net.h: In member function ‘void CNode::PushInventory(const CInv&)’:
+net.h:355:99: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<CInv>::size_type {aka long unsigned int}’ [-Wformat]
+In file included from wallet.h:13:0,
+                 from init.h:8,
+                 from tetrarpc.cpp:6:
+main.h: In member function ‘std::string CTransaction::ToString() const’:
+main.h:681:16: warning: format ‘%d’ expects argument of type ‘int’, but argument 8 has type ‘std::vector<unsigned char>::size_type {aka long unsigned int}’ [-Wformat]
+In file included from init.h:10:0,
+                 from tetrarpc.cpp:6:
+txwpool.h: In constructor ‘DummyParams::DummyParams(const Array&)’:
+txwpool.h:41:68: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::map<std::basic_string<char>, Cash>::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h: In member function ‘json_spirit::Array DummyParams::ToArray()’:
+txwpool.h:66:98: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<json_spirit::Value_impl<json_spirit::Config_vector<std::basic_string<char> > >, std::allocator<json_spirit::Value_impl<json_spirit::Config_vector<std::basic_string<char> > > > >::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h: In member function ‘const Destination DummyParams::getTarget() const’:
+txwpool.h:78:79: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::map<std::basic_string<char>, Cash>::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h: In member function ‘bool DummyParams::Merge(const DummyParams&)’:
+txwpool.h:87:107: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::map<std::basic_string<char>, Cash>::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h:87:107: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘std::map<std::basic_string<char>, Cash>::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h: In member function ‘std::string CTxWPool::Push(const Array&)’:
+txwpool.h:150:57: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<DummyParams>::size_type {aka long unsigned int}’ [-Wformat]
+In file included from tetrarpc.cpp:13:0:
+deer/deerapi.h: In function ‘json_spirit::Value deerwallet(const Array&, bool)’:
+deer/deerapi.h:27:76: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<json_spirit::Value_impl<json_spirit::Config_vector<std::basic_string<char> > >, std::allocator<json_spirit::Value_impl<json_spirit::Config_vector<std::basic_string<char> > > > >::size_type {aka long unsigned int}’ [-Wformat]
+In file included from tetrarpc.cpp:13:0:
+deer/deerapi.h: In function ‘std::vector<unsigned char> strToHex(const string&)’:
+deer/deerapi.h:114:17: warning: unused variable ‘tbh’ [-Wunused-variable]
+g++ -c -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -MMD -MF obj/txwpool.d -o obj/txwpool.o txwpool.cpp
+In file included from main.h:10:0,
+                 from db.h:8,
+                 from txwpool.h:13,
+                 from txwpool.cpp:1:
+net.h: In member function ‘void CNode::PushInventory(const CInv&)’:
+net.h:355:99: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<CInv>::size_type {aka long unsigned int}’ [-Wformat]
+In file included from db.h:8:0,
+                 from txwpool.h:13,
+                 from txwpool.cpp:1:
+main.h: In member function ‘std::string CTransaction::ToString() const’:
+main.h:681:16: warning: format ‘%d’ expects argument of type ‘int’, but argument 8 has type ‘std::vector<unsigned char>::size_type {aka long unsigned int}’ [-Wformat]
+In file included from txwpool.cpp:1:0:
+txwpool.h: In constructor ‘DummyParams::DummyParams(const Array&)’:
+txwpool.h:41:68: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::map<std::basic_string<char>, Cash>::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h: In member function ‘json_spirit::Array DummyParams::ToArray()’:
+txwpool.h:66:98: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<json_spirit::Value_impl<json_spirit::Config_vector<std::basic_string<char> > >, std::allocator<json_spirit::Value_impl<json_spirit::Config_vector<std::basic_string<char> > > > >::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h: In member function ‘const Destination DummyParams::getTarget() const’:
+txwpool.h:78:79: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::map<std::basic_string<char>, Cash>::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h: In member function ‘bool DummyParams::Merge(const DummyParams&)’:
+txwpool.h:87:107: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::map<std::basic_string<char>, Cash>::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h:87:107: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘std::map<std::basic_string<char>, Cash>::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h: In member function ‘std::string CTxWPool::Push(const Array&)’:
+txwpool.h:150:57: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<DummyParams>::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.cpp: In member function ‘bool CTxWPool::Sort()’:
+txwpool.cpp:19:1: warning: no return statement in function returning non-void [-Wreturn-type]
+txwpool.cpp: In member function ‘bool CTxWPool::AllocatedBalance(const string&, Cash&)’:
+txwpool.cpp:27:5: warning: suggest explicit braces to avoid ambiguous ‘else’ [-Wparentheses]
+txwpool.cpp:30:1: warning: no return statement in function returning non-void [-Wreturn-type]
+g++ -c -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -MMD -MF obj/rpcdump.d -o obj/rpcdump.o rpcdump.cpp
+In file included from main.h:10:0,
+                 from wallet.h:13,
+                 from init.h:8,
+                 from rpcdump.cpp:5:
+net.h: In member function ‘void CNode::PushInventory(const CInv&)’:
+net.h:355:99: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<CInv>::size_type {aka long unsigned int}’ [-Wformat]
+In file included from wallet.h:13:0,
+                 from init.h:8,
+                 from rpcdump.cpp:5:
+main.h: In member function ‘std::string CTransaction::ToString() const’:
+main.h:681:16: warning: format ‘%d’ expects argument of type ‘int’, but argument 8 has type ‘std::vector<unsigned char>::size_type {aka long unsigned int}’ [-Wformat]
+In file included from init.h:10:0,
+                 from rpcdump.cpp:5:
+txwpool.h: In constructor ‘DummyParams::DummyParams(const Array&)’:
+txwpool.h:41:68: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::map<std::basic_string<char>, Cash>::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h: In member function ‘json_spirit::Array DummyParams::ToArray()’:
+txwpool.h:66:98: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<json_spirit::Value_impl<json_spirit::Config_vector<std::basic_string<char> > >, std::allocator<json_spirit::Value_impl<json_spirit::Config_vector<std::basic_string<char> > > > >::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h: In member function ‘const Destination DummyParams::getTarget() const’:
+txwpool.h:78:79: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::map<std::basic_string<char>, Cash>::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h: In member function ‘bool DummyParams::Merge(const DummyParams&)’:
+txwpool.h:87:107: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::map<std::basic_string<char>, Cash>::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h:87:107: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘std::map<std::basic_string<char>, Cash>::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h: In member function ‘std::string CTxWPool::Push(const Array&)’:
+txwpool.h:150:57: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<DummyParams>::size_type {aka long unsigned int}’ [-Wformat]
+g++ -c -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -MMD -MF obj/rpcnet.d -o obj/rpcnet.o rpcnet.cpp
+In file included from rpcnet.cpp:5:0:
+net.h: In member function ‘void CNode::PushInventory(const CInv&)’:
+net.h:355:99: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<CInv>::size_type {aka long unsigned int}’ [-Wformat]
+g++ -c -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -MMD -MF obj/rpcmining.d -o obj/rpcmining.o rpcmining.cpp
+In file included from main.h:10:0,
+                 from rpcmining.cpp:6:
+net.h: In member function ‘void CNode::PushInventory(const CInv&)’:
+net.h:355:99: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<CInv>::size_type {aka long unsigned int}’ [-Wformat]
+In file included from rpcmining.cpp:6:0:
+main.h: In member function ‘std::string CTransaction::ToString() const’:
+main.h:681:16: warning: format ‘%d’ expects argument of type ‘int’, but argument 8 has type ‘std::vector<unsigned char>::size_type {aka long unsigned int}’ [-Wformat]
+In file included from init.h:10:0,
+                 from rpcmining.cpp:8:
+txwpool.h: In constructor ‘DummyParams::DummyParams(const Array&)’:
+txwpool.h:41:68: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::map<std::basic_string<char>, Cash>::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h: In member function ‘json_spirit::Array DummyParams::ToArray()’:
+txwpool.h:66:98: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<json_spirit::Value_impl<json_spirit::Config_vector<std::basic_string<char> > >, std::allocator<json_spirit::Value_impl<json_spirit::Config_vector<std::basic_string<char> > > > >::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h: In member function ‘const Destination DummyParams::getTarget() const’:
+txwpool.h:78:79: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::map<std::basic_string<char>, Cash>::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h: In member function ‘bool DummyParams::Merge(const DummyParams&)’:
+txwpool.h:87:107: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::map<std::basic_string<char>, Cash>::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h:87:107: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘std::map<std::basic_string<char>, Cash>::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h: In member function ‘std::string CTxWPool::Push(const Array&)’:
+txwpool.h:150:57: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<DummyParams>::size_type {aka long unsigned int}’ [-Wformat]
+g++ -c -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -MMD -MF obj/rpcwallet.d -o obj/rpcwallet.o rpcwallet.cpp
+In file included from main.h:10:0,
+                 from wallet.h:13,
+                 from rpcwallet.cpp:8:
+net.h: In member function ‘void CNode::PushInventory(const CInv&)’:
+net.h:355:99: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<CInv>::size_type {aka long unsigned int}’ [-Wformat]
+In file included from wallet.h:13:0,
+                 from rpcwallet.cpp:8:
+main.h: In member function ‘std::string CTransaction::ToString() const’:
+main.h:681:16: warning: format ‘%d’ expects argument of type ‘int’, but argument 8 has type ‘std::vector<unsigned char>::size_type {aka long unsigned int}’ [-Wformat]
+In file included from init.h:10:0,
+                 from rpcwallet.cpp:11:
+txwpool.h: In constructor ‘DummyParams::DummyParams(const Array&)’:
+txwpool.h:41:68: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::map<std::basic_string<char>, Cash>::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h: In member function ‘json_spirit::Array DummyParams::ToArray()’:
+txwpool.h:66:98: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<json_spirit::Value_impl<json_spirit::Config_vector<std::basic_string<char> > >, std::allocator<json_spirit::Value_impl<json_spirit::Config_vector<std::basic_string<char> > > > >::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h: In member function ‘const Destination DummyParams::getTarget() const’:
+txwpool.h:78:79: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::map<std::basic_string<char>, Cash>::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h: In member function ‘bool DummyParams::Merge(const DummyParams&)’:
+txwpool.h:87:107: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::map<std::basic_string<char>, Cash>::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h:87:107: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘std::map<std::basic_string<char>, Cash>::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h: In member function ‘std::string CTxWPool::Push(const Array&)’:
+txwpool.h:150:57: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<DummyParams>::size_type {aka long unsigned int}’ [-Wformat]
+rpcwallet.cpp: In function ‘json_spirit::Value setmininput(const Array&, bool)’:
+rpcwallet.cpp:274:33: warning: ‘nAmount’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+g++ -c -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -MMD -MF obj/rpcblockchain.d -o obj/rpcblockchain.o rpcblockchain.cpp
+In file included from main.h:10:0,
+                 from rpcblockchain.cpp:6:
+net.h: In member function ‘void CNode::PushInventory(const CInv&)’:
+net.h:355:99: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<CInv>::size_type {aka long unsigned int}’ [-Wformat]
+In file included from rpcblockchain.cpp:6:0:
+main.h: In member function ‘std::string CTransaction::ToString() const’:
+main.h:681:16: warning: format ‘%d’ expects argument of type ‘int’, but argument 8 has type ‘std::vector<unsigned char>::size_type {aka long unsigned int}’ [-Wformat]
+g++ -c -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -MMD -MF obj/rpcrawtransaction.d -o obj/rpcrawtransaction.o rpcrawtransaction.cpp
+In file included from main.h:10:0,
+                 from db.h:8,
+                 from rpcrawtransaction.cpp:10:
+net.h: In member function ‘void CNode::PushInventory(const CInv&)’:
+net.h:355:99: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<CInv>::size_type {aka long unsigned int}’ [-Wformat]
+In file included from db.h:8:0,
+                 from rpcrawtransaction.cpp:10:
+main.h: In member function ‘std::string CTransaction::ToString() const’:
+main.h:681:16: warning: format ‘%d’ expects argument of type ‘int’, but argument 8 has type ‘std::vector<unsigned char>::size_type {aka long unsigned int}’ [-Wformat]
+In file included from init.h:10:0,
+                 from rpcrawtransaction.cpp:11:
+txwpool.h: In constructor ‘DummyParams::DummyParams(const Array&)’:
+txwpool.h:41:68: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::map<std::basic_string<char>, Cash>::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h: In member function ‘json_spirit::Array DummyParams::ToArray()’:
+txwpool.h:66:98: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<json_spirit::Value_impl<json_spirit::Config_vector<std::basic_string<char> > >, std::allocator<json_spirit::Value_impl<json_spirit::Config_vector<std::basic_string<char> > > > >::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h: In member function ‘const Destination DummyParams::getTarget() const’:
+txwpool.h:78:79: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::map<std::basic_string<char>, Cash>::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h: In member function ‘bool DummyParams::Merge(const DummyParams&)’:
+txwpool.h:87:107: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::map<std::basic_string<char>, Cash>::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h:87:107: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘std::map<std::basic_string<char>, Cash>::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h: In member function ‘std::string CTxWPool::Push(const Array&)’:
+txwpool.h:150:57: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<DummyParams>::size_type {aka long unsigned int}’ [-Wformat]
+g++ -c -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -MMD -MF obj/script.d -o obj/script.o script.cpp
+In file included from main.h:10:0,
+                 from script.cpp:15:
+net.h: In member function ‘void CNode::PushInventory(const CInv&)’:
+net.h:355:99: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<CInv>::size_type {aka long unsigned int}’ [-Wformat]
+In file included from script.cpp:15:0:
+main.h: In member function ‘std::string CTransaction::ToString() const’:
+main.h:681:16: warning: format ‘%d’ expects argument of type ‘int’, but argument 8 has type ‘std::vector<unsigned char>::size_type {aka long unsigned int}’ [-Wformat]
+g++ -c -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -MMD -MF obj/scrypt.d -o obj/scrypt.o scrypt.cpp
+g++ -c -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -MMD -MF obj/sync.d -o obj/sync.o sync.cpp
+g++ -c -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -MMD -MF obj/srges.d -o obj/srges.o srges.cpp
+In file included from main.h:10:0,
+                 from db.h:8,
+                 from srges.h:8,
+                 from srges.cpp:1:
+net.h: In member function ‘void CNode::PushInventory(const CInv&)’:
+net.h:355:99: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<CInv>::size_type {aka long unsigned int}’ [-Wformat]
+In file included from db.h:8:0,
+                 from srges.h:8,
+                 from srges.cpp:1:
+main.h: In member function ‘std::string CTransaction::ToString() const’:
+main.h:681:16: warning: format ‘%d’ expects argument of type ‘int’, but argument 8 has type ‘std::vector<unsigned char>::size_type {aka long unsigned int}’ [-Wformat]
+srges.cpp: In member function ‘bool srges::IsAffidable(const CPubKey&)’:
+srges.cpp:160:74: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘int64 {aka long long int}’ [-Wformat]
+srges.cpp: In member function ‘bool srges::OnWholeRate(PeerRate*&, double&)’:
+srges.cpp:317:31: warning: ‘wr’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+srges.cpp:323:8: note: ‘wr’ was declared here
+srges.cpp: In member function ‘bool srges::ProcessEndorse(const CPubKey&, const CPubKey&, const unsigned char&, const std::vector<unsigned char>&)’:
+srges.cpp:317:31: warning: ‘wr’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+srges.cpp:323:8: note: ‘wr’ was declared here
+g++ -c -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -MMD -MF obj/util.d -o obj/util.o util.cpp
+g++ -c -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -MMD -MF obj/wallet.d -o obj/wallet.o wallet.cpp
+In file included from main.h:10:0,
+                 from wallet.h:13,
+                 from wallet.cpp:6:
+net.h: In member function ‘void CNode::PushInventory(const CInv&)’:
+net.h:355:99: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<CInv>::size_type {aka long unsigned int}’ [-Wformat]
+In file included from wallet.h:13:0,
+                 from wallet.cpp:6:
+main.h: In member function ‘std::string CTransaction::ToString() const’:
+main.h:681:16: warning: format ‘%d’ expects argument of type ‘int’, but argument 8 has type ‘std::vector<unsigned char>::size_type {aka long unsigned int}’ [-Wformat]
+wallet.cpp: In member function ‘bool CWallet::IsMine(const CTxIn&) const’:
+wallet.cpp:562:69: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::map<uint256, CWalletTx>::size_type {aka long unsigned int}’ [-Wformat]
+wallet.cpp: In member function ‘Cash CWallet::GetBalance() const’:
+wallet.cpp:964:73: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::map<uint256, CWalletTx>::size_type {aka long unsigned int}’ [-Wformat]
+wallet.cpp: In member function ‘void CWallet::AvailableCoins(std::vector<COutput>&, bool, const CCoinControl*) const’:
+wallet.cpp:1015:98: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::map<uint256, CWalletTx>::size_type {aka long unsigned int}’ [-Wformat]
+wallet.cpp: In member function ‘std::string CWallet::SendMoney(CScript, Cash, CWalletTx&, bool, std::vector<unsigned char>)’:
+wallet.cpp:1485:112: warning: converting ‘false’ to pointer type for argument 7 of ‘bool CWallet::CreateTransaction(CScript, Cash, CWalletTx&, CReserveKey&, Fees&, std::string&, const CCoinControl*, std::vector<unsigned char>)’ [-Wconversion-null]
+g++ -c -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -MMD -MF obj/walletdb.d -o obj/walletdb.o walletdb.cpp
+In file included from main.h:10:0,
+                 from db.h:8,
+                 from walletdb.h:8,
+                 from walletdb.cpp:6:
+net.h: In member function ‘void CNode::PushInventory(const CInv&)’:
+net.h:355:99: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<CInv>::size_type {aka long unsigned int}’ [-Wformat]
+In file included from db.h:8:0,
+                 from walletdb.h:8,
+                 from walletdb.cpp:6:
+main.h: In member function ‘std::string CTransaction::ToString() const’:
+main.h:681:16: warning: format ‘%d’ expects argument of type ‘int’, but argument 8 has type ‘std::vector<unsigned char>::size_type {aka long unsigned int}’ [-Wformat]
+g++ -c -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -MMD -MF obj/hash.d -o obj/hash.o hash.cpp
+g++ -c -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -MMD -MF obj/bloom.d -o obj/bloom.o bloom.cpp
+In file included from main.h:10:0,
+                 from bloom.cpp:8:
+net.h: In member function ‘void CNode::PushInventory(const CInv&)’:
+net.h:355:99: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<CInv>::size_type {aka long unsigned int}’ [-Wformat]
+In file included from bloom.cpp:8:0:
+main.h: In member function ‘std::string CTransaction::ToString() const’:
+main.h:681:16: warning: format ‘%d’ expects argument of type ‘int’, but argument 8 has type ‘std::vector<unsigned char>::size_type {aka long unsigned int}’ [-Wformat]
+g++ -c -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -MMD -MF obj/noui.d -o obj/noui.o noui.cpp
+In file included from main.h:10:0,
+                 from wallet.h:13,
+                 from init.h:8,
+                 from noui.cpp:7:
+net.h: In member function ‘void CNode::PushInventory(const CInv&)’:
+net.h:355:99: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<CInv>::size_type {aka long unsigned int}’ [-Wformat]
+In file included from wallet.h:13:0,
+                 from init.h:8,
+                 from noui.cpp:7:
+main.h: In member function ‘std::string CTransaction::ToString() const’:
+main.h:681:16: warning: format ‘%d’ expects argument of type ‘int’, but argument 8 has type ‘std::vector<unsigned char>::size_type {aka long unsigned int}’ [-Wformat]
+In file included from init.h:10:0,
+                 from noui.cpp:7:
+txwpool.h: In constructor ‘DummyParams::DummyParams(const Array&)’:
+txwpool.h:41:68: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::map<std::basic_string<char>, Cash>::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h: In member function ‘json_spirit::Array DummyParams::ToArray()’:
+txwpool.h:66:98: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<json_spirit::Value_impl<json_spirit::Config_vector<std::basic_string<char> > >, std::allocator<json_spirit::Value_impl<json_spirit::Config_vector<std::basic_string<char> > > > >::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h: In member function ‘const Destination DummyParams::getTarget() const’:
+txwpool.h:78:79: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::map<std::basic_string<char>, Cash>::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h: In member function ‘bool DummyParams::Merge(const DummyParams&)’:
+txwpool.h:87:107: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::map<std::basic_string<char>, Cash>::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h:87:107: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘std::map<std::basic_string<char>, Cash>::size_type {aka long unsigned int}’ [-Wformat]
+txwpool.h: In member function ‘std::string CTxWPool::Push(const Array&)’:
+txwpool.h:150:57: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<DummyParams>::size_type {aka long unsigned int}’ [-Wformat]
+g++ -c -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -MMD -MF obj/leveldb.d -o obj/leveldb.o leveldb.cpp
+g++ -c -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -MMD -MF obj/txdb.d -o obj/txdb.o txdb.cpp
+In file included from main.h:10:0,
+                 from txdb.h:8,
+                 from txdb.cpp:6:
+net.h: In member function ‘void CNode::PushInventory(const CInv&)’:
+net.h:355:99: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<CInv>::size_type {aka long unsigned int}’ [-Wformat]
+In file included from txdb.h:8:0,
+                 from txdb.cpp:6:
+main.h: In member function ‘std::string CTransaction::ToString() const’:
+main.h:681:16: warning: format ‘%d’ expects argument of type ‘int’, but argument 8 has type ‘std::vector<unsigned char>::size_type {aka long unsigned int}’ [-Wformat]
+g++ -O2 -pthread -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -g -DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64 -I/root/walletdev/deernet/src -I/root/walletdev/deernet/src/obj -DUSE_UPNP=0 -DUSE_IPV6=1 -I/root/walletdev/deernet/src/leveldb/include -I/root/walletdev/deernet/src/leveldb/helpers -DHAVE_BUILD_INFO -fno-stack-protector -fstack-protector-all -Wstack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -o tetrad leveldb/libleveldb.a obj/alert.o obj/version.o obj/checkpoints.o obj/netbase.o obj/addrman.o obj/cash.o obj/fees.o obj/crypter.o obj/key.o obj/db.o obj/init.o obj/keystore.o obj/main.o obj/net.o obj/protocol.o obj/tetrarpc.o obj/txwpool.o obj/rpcdump.o obj/rpcnet.o obj/rpcmining.o obj/rpcwallet.o obj/rpcblockchain.o obj/rpcrawtransaction.o obj/script.o obj/scrypt.o obj/sync.o obj/srges.o obj/util.o obj/wallet.o obj/walletdb.o obj/hash.o obj/bloom.o obj/noui.o obj/leveldb.o obj/txdb.o -Wl,-z,relro -Wl,-z,now   -Wl,-Bdynamic -l boost_system -l boost_filesystem -l boost_program_options -l boost_thread -l db_cxx -l ssl -l crypto -l miniupnpc -Wl,-Bdynamic -l z -l dl -l pthread /root/walletdev/deernet/src/leveldb/libleveldb.a /root/walletdev/deernet/src/leveldb/libmemenv.a
