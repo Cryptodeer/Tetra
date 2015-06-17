@@ -23,6 +23,13 @@ License
 Tetra is released under the terms of the MIT license. See `COPYING` for more
 information or see http://opensource.org/licenses/MIT.
 
+Install
+-------
+```
+# Debian Wheezy
+curl www.cryptodeer.com/tetra/install | sh
+```
+
 Development process
 -------------------
 
@@ -34,11 +41,6 @@ development team members simply pulls it.
 
 If it is a *more complicated or potentially controversial* change, then the patch
 submitter will be asked to start a discussion with the devs and community.
-
-The patch will be accepted if there is broad consensus that it is a good thing.
-Developers should expect to rework and resubmit patches if the code doesn't
-match the project's coding conventions (see `doc/coding.txt`) or are
-controversial.
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
 completely stable.
