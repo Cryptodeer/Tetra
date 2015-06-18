@@ -17,12 +17,6 @@ What is Tetra?
 
 Tetra is a lite version of Bitcoin using ecdsa sigs as proof-of-trust algorithm.
 
-Install
--------
-'''
-curl www.cryptodeer.com/tetra/install | sh
-'''
-
 License
 -------
 
