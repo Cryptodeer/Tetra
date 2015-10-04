@@ -1,0 +1,1 @@
+make gcc g++ dpkg-dev libdb5.3++-dev libqt4-dev libqrencode-dev libminiupnpc-dev   libboost-test1.55-dev zlib1g debhelper devscripts bash-completion libboost-system-dev libssl-dev pkg-config   libboost-filesystem-dev libboost-program-options-dev libboost-thread-dev libboost-test-dev
