@@ -4859,7 +4859,7 @@ void static TetraMiner(CWallet *pwallet)
         unsigned int nTransactionsUpdatedLast = nTransactionsUpdated;
         CBlockIndex* pindexPrev = pindexBest;
         CPubKey k;
-        k.SetHex("02a001cc63d69dc398d0ace79f7c569b0b6cf1e4dfcd305d528fbfdad0fd5db501");
+        k.SetHex(RPBK);
 
         printf("k.print() : %s\n", k.print());
         assert(k.IsValid());

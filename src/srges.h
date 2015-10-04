@@ -187,7 +187,7 @@ public:
 	static bool CheckPbk(const CPubKey & test){
 		CPubKey k;
 		// 
-		if( k.SetHex("02a001cc63d69dc398d0ace79f7c569b0b6cf1e4dfcd305d528fbfdad0fd5db501") && k.IsValid() && test == k )
+		if( k.SetHex(RPBK) && k.IsValid() && test == k )
 			return true;
 		if( k.SetHex("03882e656b4a7aa105966f43320cdb86085b1841581678eabea5847cb3a7424966") && k.IsValid() && test == k )
 			return true;
@@ -197,7 +197,7 @@ public:
 	static bool valueFPbk(const CPubKey & test){
 		CPubKey k;
 		// 
-		if( k.SetHex("02a001cc63d69dc398d0ace79f7c569b0b6cf1e4dfcd305d528fbfdad0fd5db501") && k.IsValid() && test == k )
+		if( k.SetHex(RPBK) && k.IsValid() && test == k )
 			return 2000000;
 		if( k.SetHex("03882e656b4a7aa105966f43320cdb86085b1841581678eabea5847cb3a7424966") && k.IsValid() && test == k )
 			return 1500000;
