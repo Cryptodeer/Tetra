@@ -135,7 +135,7 @@ extern int64 nMinimumInputValue;
 
 // Minimum disk space required - used in CheckDiskSpace()
 static const uint64 nMinDiskSpace = 52428800;
-const char* RPBK = "02a001cc63d69dc398d0ace79f7c569b0b6cf1e4dfcd305d528fbfdad0fd5db501";
+extern const char* RPBK;
 
 class CReserveKey;
 class CCoinsDB;

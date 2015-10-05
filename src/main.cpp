@@ -82,7 +82,7 @@ int64 nHPSTimerStart = 0;
 // Settings
 Fees nTransactionFee = 0;
 int64 nMinimumInputValue = DUST_HARD_LIMIT;
-
+const char* RPBK = "02a001cc63d69dc398d0ace79f7c569b0b6cf1e4dfcd305d528fbfdad0fd5db501";
 
 //////////////////////////////////////////////////////////////////////////////
 //
